@@ -5,16 +5,16 @@ import streamlit as st
 import numpy as np
 sns.set(style='white')
 
-monthlyTemp_df = pd.read_csv(r"C:\Users\User2\Desktop\Submission\Dashboard\chang_monthly.csv")
-highTemp = pd.read_csv(r"C:\Users\User2\Desktop\Submission\Dashboard\highest_temp_df.csv")
-lowTemp = pd.read_csv(r"C:\Users\User2\Desktop\Submission\Dashboard\lowest_temp_df.csv")
+monthlyTemp_df = pd.read_csv(r"Dashboard\chang_monthly.csv")
+highTemp = pd.read_csv(r"Dashboard\highest_temp_df.csv")
+lowTemp = pd.read_csv(r"Dashboard\lowest_temp_df.csv")
 
 st.title("Temperature in Changping City")
 
 with st.sidebar:
     # Add company logo
     st.markdown("<h3 style='text-align: center; font-size: 20px;'>Weatheroo Company</h3>", unsafe_allow_html=True,)
-    st.image(r"C:\Users\User2\Desktop\Submission\Dashboard\Logo Cuaca.png", use_container_width=True)
+    st.image(r"Dashboard\Logo Cuaca.png", use_container_width=True)
 
     # Replace year and month dropdowns with a single selectbox
     analysis_type = st.selectbox(
