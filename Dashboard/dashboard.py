@@ -14,7 +14,7 @@ st.title("Temperature in Changping City")
 with st.sidebar:
     # Add company logo
     st.markdown("<h3 style='text-align: center; font-size: 20px;'>Weatheroo Company</h3>", unsafe_allow_html=True,)
-    st.image(r"Dashboard/Logo Cuaca.png", use_container_width=True)
+    st.image(r"Dashboard/LogoCuaca.png", use_container_width=True)
 
     # Replace year and month dropdowns with a single selectbox
     analysis_type = st.selectbox(
